@@ -1,0 +1,21 @@
+ @media (min-width: 992px) {
+      .carousel-item {
+        height: 450px;
+      }
+    }
+    .carousel-1 img{
+        max-height: 450px;
+        object-fit: cover;
+    }
+    .carousel-2 img{
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    /* Estilos para la fuente Anton */
+    .anton-font {
+      font-family: 'Anton', sans-serif;
+      font-size: 35px;
+      color: green;
+      text-shadow: 1.5px 2px #000;
+    }
