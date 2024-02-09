@@ -8,39 +8,21 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts CDN for Anton font -->
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <style>
-    /* Estilos adicionales para ajustar la altura del banner en la vista de escritorio */
-    @media (min-width: 992px) {
-      .carousel-item {
-        height: 450px;
-      }
-    }
-    .carousel-1 img{
-        background-color: aqua;
-    }
-    .carousel-2 img{
-        background-color: black;
-    }
-
-    /* Estilos para la fuente Anton */
-    .anton-font {
-      font-family: 'Anton', sans-serif;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active carousel-1">
-      <img src="https://via.placeholder.com/1200x450" class="d-block w-100" alt="First slide">
+      <img src="https://www.bizneo.com/blog/wp-content/uploads/2019/05/pruebas-psicometricas-810x455.jpg" class="d-block w-100" alt="First slide">
       <div class="carousel-caption d-none d-md-block ">
         <h5 class="anton-font">Primera Diapositiva</h5>
         <p class="anton-font">Texto de ejemplo para la primera diapositiva.</p>
       </div>
     </div>
     <div class="carousel-item carousel-2">
-      <img src="https://via.placeholder.com/1200x450" class="d-block w-100" alt="Second slide">
+      <img src="https://img.freepik.com/vector-gratis/concepto-evaluacion-credito-dibujado-mano-documentos_23-2149154259.jpg?w=740&t=st=1707520514~exp=1707521114~hmac=c4fa8e70dfa84c9f959cb3ae3ffe89fe7596045521c547d3f77eb8c28ecc810b" class="d-block w-100" alt="Second slide">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="anton-font">Segunda Diapositiva</h5>
         <p class="anton-font">Texto de ejemplo para la segunda diapositiva.</p>
@@ -56,10 +38,29 @@
     <span class="sr-only">Siguiente</span>
   </a>
 </div>
+<hr>
+<div class="forn-test-solution">
+  <h2>Formulario de Registro</h2>
+  <form id="registroForm" action="#" method="POST">
+    <div>
+      <label for="email">Correo Electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br>
+    </div>
+    <div>
+      <label for="password">Contraseña:</label><br>
+      <input type="password" id="password" name="password" required><br>
+      <span id="passwordError" class="error"></span><br>
+    </div>
+    <div>
+      <input type="submit" value="Registrar">
+    </div>
+  </form>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="Js/functions.js"></script>
 </body>
 </html>
