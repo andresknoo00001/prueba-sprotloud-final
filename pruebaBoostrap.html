@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel Banner</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts CDN for Anton font -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos adicionales para ajustar la altura del banner en la vista de escritorio */
+    @media (min-width: 992px) {
+      .carousel-item {
+        height: 450px;
+      }
+    }
+    .carousel-1 img{
+        background-color: aqua;
+    }
+    .carousel-2 img{
+        background-color: black;
+    }
+
+    /* Estilos para la fuente Anton */
+    .anton-font {
+      font-family: 'Anton', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active carousel-1">
+      <img src="https://via.placeholder.com/1200x450" class="d-block w-100" alt="First slide">
+      <div class="carousel-caption d-none d-md-block ">
+        <h5 class="anton-font">Primera Diapositiva</h5>
+        <p class="anton-font">Texto de ejemplo para la primera diapositiva.</p>
+      </div>
+    </div>
+    <div class="carousel-item carousel-2">
+      <img src="https://via.placeholder.com/1200x450" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="anton-font">Segunda Diapositiva</h5>
+        <p class="anton-font">Texto de ejemplo para la segunda diapositiva.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
